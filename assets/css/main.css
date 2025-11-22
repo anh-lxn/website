@@ -3816,8 +3816,8 @@ input, select, textarea {
 		}
 
 .features {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .features li {
@@ -3838,7 +3838,8 @@ input, select, textarea {
 }
 
 .project-row img {
-    width: 600px;      /* 👉 Bild wird groß */
+	width: 100%;         /* Bild passt sich an den Container an */
+	max-width: 600px;      /* 👉 Bild wird groß */
     height: auto;
     border-radius: 8px;
 }
