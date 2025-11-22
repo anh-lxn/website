@@ -3814,3 +3814,41 @@ input, select, textarea {
 			}
 
 		}
+
+.features {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.features li {
+    width: 100%;
+    margin: 0 auto 3em auto;
+}
+
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    width: 100%;
+    max-width: 1200px;   /* perfekt für große Bilder */
+    margin: 0 auto;      /* zentriert */
+    padding: 0 2em;      /* Abstand links/rechts für große screens */
+}
+
+.project-row img {
+    width: 600px;      /* 👉 Bild wird groß */
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.skills-used {
+    margin-top: 0.7em;
+    font-size: 0.95em;
+    color: #666;
+}
