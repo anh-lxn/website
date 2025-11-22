@@ -7,6 +7,54 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/* FORCE OVERRIDE for custom Project Layout */
+.features {
+    all: unset;
+    display: flex !important;
+    flex-direction: column !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.features li {
+    width: 100% !important;
+    margin: 0 0 3em 0 !important;
+    padding: 0 !important;
+}
+
+.project-row {
+    display: flex;
+    gap: 2em;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.project-row img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-text {
+    flex: 1;
+}
+
+@media (max-width: 850px) {
+    .project-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-text {
+        text-align: center;
+    }
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3814,42 +3862,3 @@ input, select, textarea {
 			}
 
 		}
-
-.features {
-    display: flex;
-    flex-direction: column;
-}
-
-.features li {
-    width: 100%;
-    margin: 0 auto 3em auto;
-}
-
-
-.project-row {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-
-    width: 100%;
-    max-width: 1200px;   /* perfekt für große Bilder */
-    margin: 0 auto;      /* zentriert */
-    padding: 0 2em;      /* Abstand links/rechts für große screens */
-}
-
-.project-row img {
-	width: 100%;         /* Bild passt sich an den Container an */
-	max-width: 600px;      /* 👉 Bild wird groß */
-    height: auto;
-    border-radius: 8px;
-}
-
-.project-text {
-    flex: 1;
-}
-
-.skills-used {
-    margin-top: 0.7em;
-    font-size: 0.95em;
-    color: #666;
-}
