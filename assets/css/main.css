@@ -3876,3 +3876,8 @@ input, select, textarea {
         padding: 0;
     }
 }
+
+.course-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
